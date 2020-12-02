@@ -1,0 +1,201 @@
+
+
+.my_container{
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    height: calc(100% - 90px);
+}
+
+/* Left nav */
+main .nav_sx {
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+/* ... */
+
+
+/* Logo */
+.nav_sx .nav-sx-head .head-logo img{
+    height: 90px;
+    padding: 20px;
+}
+/* Menu principal */
+.nav_sx .nav-sx-head .head-menu ul li{
+    list-style: none;
+}
+.nav_sx .nav-sx-head .head-menu img{
+    width: 30px;
+    margin: 5px 0;
+}
+/* ... */
+
+
+/* Playlist */
+.nav_sx .nav-sx-playlist{
+    flex-grow: 1;
+    min-height: 250px;
+    overflow-y: auto;
+}
+.nav_sx .nav-sx-playlist ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.nav_sx  ul li a{
+    color: #666666;
+    text-decoration: none;
+}
+.nav_sx ul li a:hover{
+    color: white;
+}
+/* ... */
+
+
+/* Profile + Link App */
+
+/* Link to Download */
+.nav_sx .nav-sx-foot .nav-app-download{
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+}
+.nav_sx .nav-sx-foot .nav-app-download a{
+    color: #666666;
+    text-decoration: none;
+}
+.nav_sx .nav-sx-foot .nav-app-download a:hover{
+    color: white;
+}
+
+.nav_sx .nav-sx-foot .nav-app-download a img{
+    width: 15px;
+    margin-right: 10px;
+}
+/* Account Info */
+.nav_sx .nav-sx-foot .account-info{
+    margin: 10px 0;
+}
+.nav_sx .nav-sx-foot .account-info img{
+    width: 40px;
+    border-radius: 50%;
+}
+.nav_sx .nav-sx-foot .account-info img:hover{
+    border: 1px solid #1ed760;
+}
+/* ... */
+
+
+
+
+
+/* Content Principal */
+main .content_main{
+    width: calc(100% - 250px);
+    height: 100%;
+    background-color: #141922;
+    overflow-y: auto;
+    padding-top: 90px;
+}
+/* Call To Action Reminder */
+.content_main .upgrade-plan{
+    width: calc(100% - 250px);
+    height: 90px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+/* Upgrade Button */
+.content_main .upgrade-plan .upgrade_btn{
+    padding: 12px 50px;
+    vertical-align: middle;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+.content_main .upgrade-plan .upgrade_btn:hover{
+    padding: 15px 60px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* ..........END.......... */
+
+
+
+
+/* Debug class */
+ul{
+    padding: 0;
+}
+.font-l{
+    font-size: 30px;
+}
+
+
+.blu {
+    background-color: blue;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .violet {
+    background-color: violet;
+  }
+
+
+  .p_0{
+    padding: 0;
+  }
+  .p_20{
+      padding: 20px;
+  }
