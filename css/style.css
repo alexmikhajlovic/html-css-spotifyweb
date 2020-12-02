@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .my_container{
     width: 100%;
@@ -6,6 +8,8 @@
     background-color: yellow;
     overflow: hidden;
 }
+
+/* MAIN */
 main{
     display: flex;
     height: calc(100% - 90px);
@@ -13,7 +17,7 @@ main{
 
 /* Left nav */
 main .nav_sx {
-    width: 250px;
+    width: 230px;
     height: 100%;
     background-color: black;
     display: flex;
@@ -21,20 +25,22 @@ main .nav_sx {
     justify-content: space-between;
     color: white;
 }
+
 /* ... */
 
 
 /* Logo */
-.nav_sx .nav-sx-head .head-logo img{
-    height: 90px;
-    padding: 20px;
+.nav_sx .head-logo img{
+    width: 70%;
+    padding-bottom: 20px;
 }
 /* Menu principal */
-.nav_sx .nav-sx-head .head-menu ul li{
+.nav_sx .head-menu ul li{
     list-style: none;
 }
-.nav_sx .nav-sx-head .head-menu img{
-    width: 30px;
+/* Menu principal's icons */
+.nav_sx .head-menu img{
+    width: 26px;
     margin: 5px 0;
 }
 /* ... */
@@ -48,65 +54,64 @@ main .nav_sx {
 }
 .nav_sx .nav-sx-playlist ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 15px 0;
 }
-.nav_sx  ul li a{
-    color: #666666;
-    text-decoration: none;
-}
-.nav_sx ul li a:hover{
-    color: white;
-}
+
 /* ... */
 
 
 /* Profile + Link App */
 
 /* Link to Download */
+.nav_sx .nav-sx-foot{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
 .nav_sx .nav-sx-foot .nav-app-download{
     padding: 10px 0;
     border-bottom: 1px solid grey;
+    font-size: 12px;
 }
-.nav_sx .nav-sx-foot .nav-app-download a{
-    color: #666666;
-    text-decoration: none;
-}
-.nav_sx .nav-sx-foot .nav-app-download a:hover{
-    color: white;
-}
-
+/* Download icon */
 .nav_sx .nav-sx-foot .nav-app-download a img{
     width: 15px;
     margin-right: 10px;
 }
+
 /* Account Info */
 .nav_sx .nav-sx-foot .account-info{
-    margin: 10px 0;
+    margin-top: 10px;
 }
 .nav_sx .nav-sx-foot .account-info img{
-    width: 40px;
+    width: 30px;
     border-radius: 50%;
 }
 .nav_sx .nav-sx-foot .account-info img:hover{
     border: 1px solid #1ed760;
 }
+.nav_sx .nav-sx-foot .account-info span{
+    text-transform: capitalize;
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
 /* ... */
-
-
-
-
+/* ... */
 
 /* Content Principal */
 main .content_main{
-    width: calc(100% - 250px);
+    width: calc(100% - 230px);
     height: 100%;
     background-color: #141922;
     overflow-y: auto;
     padding-top: 90px;
 }
+
 /* Call To Action Reminder */
 .content_main .upgrade-plan{
-    width: calc(100% - 250px);
+    width: calc(100% - 230px);
     height: 90px;
     padding: 20px;
     position: fixed;
@@ -132,38 +137,36 @@ main .content_main{
     font-size: 15px;
 }
 
+/* Link Content Nav */
+.content_main .content_nav ul li{
+    display: inline;
+    margin: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ... */
+/* ... */
 
 /* FOOTER */
 footer{
     width: 100%;
-    height: 100px;
+    height: 90px;
     background-color: #282828;
     position: fixed;
     bottom: 0;
     left: 0;
+    display: flex;
+}
+footer .song{
+    width: 20%;
+}
+footer .player{
+    width: 60%;
+}
+footer .controls{
+    width: 20%;
 }
 
 /* ..........END.......... */
@@ -177,6 +180,20 @@ ul{
 }
 .font-l{
     font-size: 30px;
+}
+/* List Style */
+.nav_sx  ul li a,
+.nav_sx .nav-sx-foot .nav-app-download a,
+.content_main .content_nav ul li a{
+    color: #666666;
+    text-decoration: none;
+}
+.nav_sx ul li a:hover,
+.nav_sx .nav-sx-foot .nav-app-download a:hover,
+.nav_sx .nav-sx-foot .account-info a:hover,
+.content_main .content_nav ul li a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -193,9 +210,13 @@ ul{
   }
 
 
-  .p_0{
+.p_0{
     padding: 0;
   }
-  .p_20{
+.p_20{
       padding: 20px;
   }
+.border-head-menu{
+    border-left: 3px solid #1ed760;
+}
+  
