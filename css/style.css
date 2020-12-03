@@ -1,243 +1,478 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-}
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+  }
 
-.my_container{
-    width: 100%;
-    height: 100vh;
-    background-color: yellow;
-    overflow: hidden;
-}
+  body {
+        min-width: 500px;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+  }
+
+  #ViewPort {
+        width: 100%; 
+        height: 100vh;
+        background: black;
+  }
 
 /* MAIN */
-main{
-    display: flex;
-    height: calc(100% - 90px);
-}
+    main{
+            height: calc(100% - 90px);
+            overflow: hidden;
+    }
 
-/* Left nav */
-main .nav_sx {
-    width: 230px;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-}
+/* Left Nav */
+    main nav.main-nav {
+            float: left;
+            width: 230px;
+            height: 100%;
+            min-height: 480px;
+    }
+  /* Nav Head */
+    main nav.main-nav .nav-head {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 80px);
+            overflow-y: hidden;
+    }
+  /* Logos */
+    main nav.main-nav .nav-head .nav-logo img,
+    main nav.main-nav .nav-head .nav-logo-mobile img {
+            width: 70%;
+    }
+    main nav.main-nav .nav-head .nav-logo-mobile {
+            display: none;
+            text-align: center;
+            padding: 5px;
+    }
+  /* Main Menu list */
+    main nav.main-nav .nav-head .nav-main-menu .menu-list li {
+            padding-left: 17px;
+            /* When user isn't actually on this page */
+            border-left: 3px solid transparent;
+            /* Total 20px of padding left */
+    }
+  /* When user actually use this page */
+    main nav.main-nav .nav-head .nav-main-menu .menu-list li.active {
+            border-left: 3px solid rgb(30,215,96);
+    }
+     main nav.main-nav .nav-head .nav-main-menu .menu-list li.active a{
+            color: white;
+    }
+  /* Resizing img to icons */
+     main nav.main-nav .nav-head .nav-main-menu .menu-list img {
+            height: 25px;
+            width: 25px;
+            margin-right: 5px;
+            vertical-align: middle;
+    }
 
-/* ... */
+  /* Playlist section */
+    main nav.main-nav .nav-head .nav-playlist {
+            overflow: hidden;
+    }
+    main nav.main-nav .nav-head .nav-playlist h2 {
+            margin-bottom: 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+    }
+  /* Add Playlist */
+  main nav.main-nav .nav-head .nav-playlist .add-playlist {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 15px;
+        line-height: 35px;
+  }
+  /* Icon Add Playlist */
+  main nav.main-nav .nav-head .nav-playlist .add-playlist span:before {
+        display: inline-block;
+        content: '+';
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 35px;
+        text-align: center;
+        line-height: 35px;
+        vertical-align: middle;
+        color: #141922;
+        transition: all 1s;
+  }
+  main nav.main-nav .nav-head .nav-playlist .add-playlist:hover span:before {
+    background-color: rgb(30,215,96);
+  }
+  /* User's Playlist Scrollable */
+  main nav.main-nav .nav-head .nav-playlist .menu-list{
+        height: 80%;
+        overflow-y: auto;
+        overflow-x: hidden;
+  }
+  /* ... */
+
+  /* Nav Foot */
+  main nav.main-nav .nav-foot {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80px;
+        padding: 0 20px;
+  }
+  main nav.main-nav .nav-foot .app-download a,
+  main nav.main-nav .nav-foot .user {
+        display: flex;
+        align-items: center;
+ }
+  /* Link to Download App */
+  main nav.main-nav .nav-foot .app-download {
+        padding-bottom: 10px;
+        border-bottom: 1px solid darkgray;
+  }
+  main nav.main-nav .nav-foot .app-download:hover a{
+        color:  rgb(30,215,96);
+  }
+  main nav.main-nav .nav-foot .app-download a {
+        font-size: 12px;
+  }
+  /* Icon for Link to Download App */
+  main nav.main-nav .nav-foot .app-download img {
+        width: 15px;
+        margin-right: 10px;
+  }
+  /* User Info */
+  main nav.main-nav .nav-foot .user .user-profile-img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        background: grey;
+        border-radius: 50%;
+        overflow: hidden;
+  }
+  /* User's Image */
+  main nav.main-nav .nav-foot .user .user-profile-img img{
+        width: 100%;
+        border-radius: 50%;
+  }
+  main nav.main-nav .nav-foot .user .user-profile-img img:hover{
+        border: 1px solid  rgb(30,215,96);
+        cursor: pointer;
+  }
+  /* User's Name */
+  main nav.main-nav .nav-foot .user .user-name {
+        font-size: 14px;
+        color: white;
+  }
 
 
-/* Logo */
-.nav_sx .head-logo img{
-    width: 70%;
-    padding-bottom: 20px;
-}
-/* Menu principal */
-.nav_sx .head-menu ul li{
-    list-style: none;
-}
-/* Menu principal's icons */
-.nav_sx .head-menu img{
-    width: 26px;
-    margin: 5px 0;
-    opacity: 0.5;
-}
-.nav_sx .head-menu img:hover{
-    opacity: 1;
-}
-/* ... */
+/* Principal Content */
+  main #principal-content {
+        float: left;
+        width: calc(100% - 230px);
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background: #141922;
+  }
+ /* Call-To-Action / Upgrade reminder */
+  main #principal-content .call-to-action {
+        position: fixed;
+        width: calc(100% - 230px);
+        height: 90px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        text-align: right;
+        z-index: 1;
+  }
+ /* Central Nav Bar */
+  main #principal-content .main-content-nav {
+        width: 100%;
+        margin-top: 90px;
+        text-align: center;
+  }
+  main #principal-content .main-content-nav a {
+        position: relative;
+        padding-bottom: 5px;
+  }
+ /* Border for actually page */
+    main #principal-content .main-content-nav a.active-now:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        content: '';
+        display: block;
+        height: 2px;
+        width: 30px;
+        background:  rgb(30,215,96);
+    }
+  /* ... */
+  
+ /* Covers Section */
+    main #principal-content .covers .covers-row {
+        margin: 20px;
+    }
+    main #principal-content .covers .covers-list {
+        display: flex;
+        margin: 30px 0;
+        flex-wrap: wrap;
+    }
+    main #principal-content .covers .covers-list .cover-item {
+        flex-shrink: 0;
+        width: calc(100% / 6 - 15px);
+        margin-right: 15px;
+        cursor: pointer;
+        flex-wrap: wrap;
+    }
+    main #principal-content .covers .covers-list .cover-item .cover-container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main #principal-content .covers .covers-list .cover-item .cover-container .cover-layover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 60px;
+    }
+    main #principal-content .covers .covers-list .cover-item .cover-container .cover-layover i{
+        display: none;
+        transition: 1s;
+    }
+    main #principal-content .covers .covers-list .cover-item:hover .cover-container .cover-layover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    main #principal-content .covers .covers-list .cover-item:hover .cover-container .cover-layover i {
+        display: inline;
+    }
+    main #principal-content .covers .covers-list .cover-item .cover-text h3{
+       font-size: 16px;
+       line-height: 16px;
+    }
+    main #principal-content .covers .covers-list .cover-item .cover-container img{
+        max-width: 100%;
+    }
+    main #principal-content .covers #popular .cover-item .cover-container img{
+        border-radius: 100%;
+      }
+      main #principal-content .covers #popular .cover-item .cover-container {
+        border-radius: 100%;
+        overflow: hidden;
+      }
 
 
-/* Playlist */
-.nav_sx .nav-sx-playlist{
-    flex-grow: 1;
-    min-height: 250px;
-    overflow: hidden;
-}
-/* Add Playlist */
-.nav_sx .nav-sx-playlist .add-playlist{
-    padding-bottom: 10px;
-}
-.nav_sx .nav-sx-playlist .add-playlist a{
-    color: grey;
-}
-.nav_sx .nav-sx-playlist .add-playlist a i{
-    font-size: 40px;
-    margin-right: 10px;
-}
-.nav_sx .nav-sx-playlist .add-playlist a:hover{
-    color: white;
-    text-decoration: none;
-}
-/* Your Playlist */
-.nav_sx .nav-sx-playlist ul.your-playlist{
-    overflow-y: auto;
-    height: 100%;
-}
-.nav_sx .nav-sx-playlist ul li{
-    list-style: none;
-    margin: 15px 0;
-}
-
-/* ... */
-
-
-/* Profile + Link App */
-
-/* Link to Download */
-.nav_sx .nav-sx-foot{
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-}
-.nav_sx .nav-sx-foot .nav-app-download{
-    padding: 10px 0;
-    border-bottom: 1px solid grey;
-    font-size: 12px;
-}
-/* Download icon */
-.nav_sx .nav-sx-foot .nav-app-download a img{
-    width: 15px;
-    margin-right: 10px;
-}
-
-/* Account Info */
-.nav_sx .nav-sx-foot .account-info{
-    margin-top: 10px;
-}
-.nav_sx .nav-sx-foot .account-info img{
-    width: 30px;
-    border-radius: 50%;
-}
-.nav_sx .nav-sx-foot .account-info img:hover{
-    border: 1px solid #1ed760;
-}
-.nav_sx .nav-sx-foot .account-info span{
-    text-transform: capitalize;
-    color: white;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-/* ... */
-/* ... */
-
-/* Content Principal */
-main .content_main{
-    width: calc(100% - 230px);
-    height: 100%;
-    background-color: #141922;
-    overflow-y: auto;
-    padding-top: 90px;
-}
-
-/* Call To Action Reminder */
-.content_main .upgrade-plan{
-    width: calc(100% - 230px);
-    height: 90px;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-/* Upgrade Button */
-.content_main .upgrade-plan .upgrade_btn{
-    padding: 12px 50px;
-    vertical-align: middle;
-    border: 1px solid white;
-    border-radius: 25px;
-    text-transform: uppercase;
-    color: white;
-    font-size: 12px;
-    text-decoration: none;
-    transition: all 0.8s;
-}
-.content_main .upgrade-plan .upgrade_btn:hover{
-    padding: 15px 60px;
-    font-size: 15px;
-}
-
-/* Link Content Nav */
-.content_main .content_nav ul li{
-    display: inline;
-    margin: 0 10px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 55px;
-}
-
-/* ... */
-/* ... */
 
 /* FOOTER */
-footer{
-    width: 100%;
-    height: 90px;
-    background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
+    footer {
+        height: 90px;
+            background: #282828;
+    }
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS responsive */
+
+/* Left Nav */
+    @media screen and (max-width: 600px) {
+        main nav.main-nav {
+        width: 50px;
+        }
+    }
+ /* Logos */
+    @media screen and (max-width: 600px) {
+        main nav.main-nav .nav-head .nav-logo {
+          display: none;
+        }
+        main nav.main-nav .nav-head .nav-logo-mobile {
+          display: block;
+        }
+      }
+ /* Main Menu list */
+    @media screen and (max-width: 600px) {
+        main nav.main-nav .nav-head .nav-main-menu .menu-list {
+            text-align: center;
+        }
+        main nav.main-nav .nav-head .nav-main-menu .menu-list li {
+            border: 0;
+            padding-left: 0;
+        }
+        main nav.main-nav .nav-head .nav-main-menu .menu-list li a span {
+            display: none;
+        }
+        main nav.main-nav .nav-head .nav-main-menu .menu-list img {
+            margin: 0;
+        }
+    }
+ /* Playlist section */
+    @media screen and (max-width: 600px) {
+        main nav.main-nav .nav-head .nav-playlist {
+        display: none;
+        }
+    }
+
+ /* Nav Foot */
+    
+    @media screen and (max-width: 600px) {
+
+        /* Download App link */
+        main nav.main-nav .nav-foot {
+            padding: 0;
+            align-items: center;
+        }
+        main nav.main-nav .nav-foot .app-download {
+            text-align: center;
+            border: 0;
+            padding: 0;
+        }
+        main nav.main-nav .nav-foot .app-download span{
+            display: none;
+        }
+        main nav.main-nav .nav-foot .app-download img {
+            margin: 0;
+            padding: 0;
+            width: 25px;
+        }
+        /* User info */
+        main nav.main-nav .nav-foot .user .user-name {
+            display: none;
+        }
+        
+    }
+/* ...   */
+
+
+
+/* Principal Content */
+    @media screen and (max-width: 600px) {
+        main #principal-content {
+            width: calc(100% - 50px);
+        }
+
+
+    }
+
+ /* Covers Section */
+    @media screen and (max-width: 1100px) {
+        main #princiapl-content .covers .covers-list {
+            flex-wrap: wrap;
+        }
+        main #principal-content .covers .covers-list .cover-item {
+            width: calc(100% / 4 - 10px);
+            margin-right: 10px;
+        }
+        
+
+        
 }
-footer .song{
-    width: 20%;
-}
-footer .player{
-    width: 60%;
-}
-footer .controls{
-    width: 20%;
-}
-
-/* ..........END.......... */
 
 
 
 
-/* Debug class */
-ul{
-    padding: 0;
-    margin: 0;
-}
 
 
-.font-l{
-    font-size: 30px;
-}
 
 
-/* List Style */
-.nav_sx  ul li a,
-.nav_sx .nav-sx-foot .nav-app-download a,
-.content_main .content_nav ul li a{
-    color: #666666;
-    text-decoration: none;
-}
-.nav_sx ul li a:hover,
-.nav_sx .nav-sx-foot .nav-app-download a:hover,
-.nav_sx .nav-sx-foot .account-info a:hover,
-.content_main .content_nav ul li a:hover{
-    color: white;
-    text-decoration: none;
-}
-/* ... */
-
-/* BG Colors */
-.blu { background-color: blue; }
-.red { background-color: red; }
-.violet { background-color: violet }
-/* ... */
-
-/* Padding */
-.p_0 { padding: 0; }
-.p_20 { padding: 20px; }
-/* ... */
 
 
-.border-head-menu { border-left: 3px solid #1ed760; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MY FRAMEWORK */
+
+  a { 
+        text-decoration: none;
+        color: darkgray;
+  }
+  a:hover,
+  a:active,
+  a:focus { 
+        color: white;
+  }
+  /* Principal Menu Icons */
+  a img {
+        opacity: 0.5;
+  }
+  a:hover img,
+  a:active img,
+  a:focus img { 
+        opacity: 1;
+  }
+  /* Upgrade Button */
+  a.btn {
+        display: inline-block;
+        padding: 10px 40px;
+        border: 1px solid white;
+        border-radius: 50px;
+        font-size: 15px;
+        line-height: 20px;
+        color: white;
+        text-transform: uppercase;
+        transition: 1s;
+  }
+  a.btn:hover,
+  a.btn:active,
+  a.btn:focus {
+        padding: 15px 50px;
+        color: rgb(30,215,96);
+        border: 1px solid rgb(30,215,96);
+        font-size: 18px;
+  }
+  /* Reciclable Rules */
+  .clearfix::after{
+        content: '';
+        display: table;
+        clear: both;
+  }
+  .float{
+        float: left
+  }
+  .text-center{
+      text-align: center;
+  }
+  p {
+        font-size: 12px;
+        color: darkgray;
+  }
+
+  .menu-list {
+        list-style: none;
+        font-size: 13px;
+        line-height: 35px;
+  }
   
+  .menu-inline li{
+        display: inline-block;
+        margin: 10px;
+  }
+
+
+  .p_20{
+      padding: 20px;
+  }
+
+  .m_20{
+    margin: 20px;
+}
