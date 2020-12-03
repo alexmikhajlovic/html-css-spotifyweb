@@ -42,6 +42,10 @@ main .nav_sx {
 .nav_sx .head-menu img{
     width: 26px;
     margin: 5px 0;
+    opacity: 0.5;
+}
+.nav_sx .head-menu img:hover{
+    opacity: 1;
 }
 /* ... */
 
@@ -50,7 +54,27 @@ main .nav_sx {
 .nav_sx .nav-sx-playlist{
     flex-grow: 1;
     min-height: 250px;
+    overflow: hidden;
+}
+/* Add Playlist */
+.nav_sx .nav-sx-playlist .add-playlist{
+    padding-bottom: 10px;
+}
+.nav_sx .nav-sx-playlist .add-playlist a{
+    color: grey;
+}
+.nav_sx .nav-sx-playlist .add-playlist a i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.nav_sx .nav-sx-playlist .add-playlist a:hover{
+    color: white;
+    text-decoration: none;
+}
+/* Your Playlist */
+.nav_sx .nav-sx-playlist ul.your-playlist{
     overflow-y: auto;
+    height: 100%;
 }
 .nav_sx .nav-sx-playlist ul li{
     list-style: none;
@@ -140,10 +164,11 @@ main .content_main{
 /* Link Content Nav */
 .content_main .content_nav ul li{
     display: inline;
-    margin: 10px;
+    margin: 0 10px;
     padding-bottom: 5px;
     text-transform: uppercase;
     font-size: 15px;
+    line-height: 55px;
 }
 
 /* ... */
@@ -177,10 +202,15 @@ footer .controls{
 /* Debug class */
 ul{
     padding: 0;
+    margin: 0;
 }
+
+
 .font-l{
     font-size: 30px;
 }
+
+
 /* List Style */
 .nav_sx  ul li a,
 .nav_sx .nav-sx-foot .nav-app-download a,
@@ -195,28 +225,19 @@ ul{
     color: white;
     text-decoration: none;
 }
+/* ... */
+
+/* BG Colors */
+.blu { background-color: blue; }
+.red { background-color: red; }
+.violet { background-color: violet }
+/* ... */
+
+/* Padding */
+.p_0 { padding: 0; }
+.p_20 { padding: 20px; }
+/* ... */
 
 
-.blu {
-    background-color: blue;
-  }
-  
-  .red {
-    background-color: red;
-  }
-  
-  .violet {
-    background-color: violet;
-  }
-
-
-.p_0{
-    padding: 0;
-  }
-.p_20{
-      padding: 20px;
-  }
-.border-head-menu{
-    border-left: 3px solid #1ed760;
-}
+.border-head-menu { border-left: 3px solid #1ed760; }
   
