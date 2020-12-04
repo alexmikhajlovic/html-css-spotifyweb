@@ -228,6 +228,7 @@
         position: relative;
         display: flex;
         width: 100%;
+        height: 200px;
         margin-bottom: 20px;
     }
     main #principal-content .covers .covers-list .cover-item .cover-container .cover-layover{
@@ -385,7 +386,7 @@
             border-radius: 4px;
             background-color: rgba(255, 255, 255, 0.6);
         }
-        footer #stream-player .player-bar .controller-progress-bar.perc-20 {
+        footer #stream-player .player-bar .controller-progress-bar.perc-100 {
             width: 100%;
             animation: progress 60s linear infinite;
         }
@@ -553,8 +554,11 @@
 
 
   /* MY FRAMEWORK */
+    
+
     audio{
         width: 50px;
+        filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
     }
     
   a { 
