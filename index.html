@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="min-width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="icon" href="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-icon-marilyn-scott-0.png" sizes="16x16 24x24 32x32 48x48 64x64 128x128">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <bgsound src="music/my-way.mp3" loop="infinite"></bgsound>
 </head>
 <body>
-
+    
      <!-- VIEWPORT -->
      <div id="ViewPort">
 
@@ -234,7 +235,7 @@
                                         <!-- Cover Content -->
                                         <div class="cover-container">
                                             <img src="https://upload.wikimedia.org/wikipedia/en/0/01/My_Way_by_Fetty_Wap.png" alt="My Way" class="cover-img">
-                                            <div class="cover-layover"><i class="far fa-play-circle"></i></div>
+                                            <div class="cover-layover"><i class="far fa-pause-circle"></i></div>
                                         </div>
                                         <!-- Text Info -->
                                         <div class="cover-text text-center">
@@ -367,13 +368,13 @@
 
                     <!-- Cover album -->
                   <div class="player-album-cover">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/51dKwD5q0SL._SY400_.jpg" alt="Butterfly Effect - Travis Scott">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/0/01/My_Way_by_Fetty_Wap.png" alt="My Way - Fetty Wap">
                   </div>
 
                   <!-- Cover Info -->
                   <div class="player-album-title">
-                    <h2><a href="#">Astroworld</a></h2>
-                    <p><a href="#">Travis Scott</a></p>
+                    <h2><a href="#">My Way</a></h2>
+                    <p><a href="#">Fetty Wap</a></p>
                   </div>
 
                   <!-- Cover icons -->
@@ -394,7 +395,8 @@
                         <ul class="menu-list">
                             <li><i class="fas fa-random"></i></li>
                             <li><i class="fas fa-step-backward"></i></li>
-                            <li class="player-controller-play-icon"><i class="far fa-pause-circle"></i></li>
+                            <audio src="music/my-way.mp3" controls></audio>
+                            <!-- <li class="player-controller-play-icon"><i class="far fa-pause-circle"></i></li> -->
                             <li><i class="fas fa-step-forward"></i></li>
                             <li><i class="fas fa-redo-alt"></i></li>
                         </ul>

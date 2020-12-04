@@ -516,6 +516,12 @@
         }
         
     }
+    /* Hidden Upgrade Button */
+    @media screen and (max-height: 180px) {
+        main #principal-content .call-to-action {
+          display: none;
+        }
+      }
 
  /* Covers Section */
     @media screen and (max-width: 1100px) {
@@ -528,17 +534,15 @@
         }           
 }
 
-    /* @media screen and (max-width: 700px) {
-        main #principal-content .covers .covers-list .cover-item {
-            width: calc(100% / 2 - 10px);
-            margin-right: 10px;
-        } */
-
+ /* FOOTER */
+    @media screen and (max-width: 50px) {
+        footer { display: none; }
+}
 
 
 /* ANIMATION KEYFRAME */
 
-/* Player Bar Progress */
+/* Player Bar Progress Animated */
     @keyframes progress{
             0%   {width: 0%;}
             25%  {width: 25%;}
@@ -548,23 +552,11 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   /* MY FRAMEWORK */
-
+    audio{
+        width: 50px;
+    }
+    
   a { 
         text-decoration: none;
         color: darkgray;
