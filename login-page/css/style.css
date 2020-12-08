@@ -1,0 +1,205 @@
+/* Debug */
+.debug .row [class*="col-"] {
+    background-color: #0c90e8;
+    border: 1px solid black;
+  }
+  .debug .row {
+    height: 80px;
+    /* line-height: 150px; */
+  }
+  .debug .row [class*="col-"] {
+    height: 100%;
+    /* text-align:center; */
+  }
+  .debug .row .row [class*="col-"] {
+    background-color: coral;
+    border: 2px solid white;
+  }
+  .debug .row .row {
+    padding: 5px;
+  }
+/* ................................................. */
+
+  /* MultiUse Class */
+    a,
+    li a { 
+        color: white;
+        font-size: 15px;
+        }
+    
+    a,
+    li a:hover{
+        color: rgb(30,215,96);
+        text-decoration: none;
+    }
+    ul li{
+        list-style: none;
+    }
+    p.f-s{
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 40px;
+    }
+    p.f-l{
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .c_grey{
+        color: grey;
+    }
+
+    /* General Rules for main Content */
+    .content_main,
+    footer{
+        padding: 100px 0;
+    }
+    .content_main h3{
+        font-size: 15px;
+    }
+    .content_main h1,
+    .content_main h2{
+        font-size: 58px;
+        font-weight: 800;
+    }
+    .content_main img{
+        margin: 0 80px;
+    }
+    .content_main a{
+        padding: 15px 50px;
+        border-radius: 30px;
+        font-size: 15px;    
+        font-weight: 800;
+    }
+/* ................................................. */
+
+/* HEADER */
+  header{
+      background-color: black;
+      color: white;
+      height: 80px;
+  }
+  /* Logo */
+  header img{
+      height: 40px;
+      margin: 20px 0;
+  }
+  /* Nav Bar */
+  header nav ul li{
+      display: inline;
+      padding: 0 15px;
+      line-height: 80px;
+      font-weight: 800;
+  }
+/* ................................................. */
+
+/* MAIN */
+  /* Offer section */
+    main #offer{
+        background-color: #ff4632;
+        color: black;
+    }
+    main #offer a{
+        color: white;
+        background-color: black;
+    }
+    main #offer a:hover,
+    main #offer a:active,
+    main #offer a:focus{
+        color: black;
+        background-color: white;
+        text-decoration: none;
+    }
+    /* .................... */    
+
+   /* Your 2020 section */
+    main #your2020{
+        background-color:#cb1582;
+        color: white;
+    }
+    main #your2020 img{
+        width: 400px;
+        margin-top: 40px;
+    }
+    main #your2020 a{
+        color: #cb1582;
+        background-color: white;
+    }
+    main #your2020 a:hover,
+    main #your2020 a:active,
+    main #your2020 a:focus{
+        text-decoration: none;
+    }
+    /* .................... */
+
+   /* Spotify Free section */
+    main #free{
+        background-color:#2d46b9;
+        background-image: url("https://www.scdn.co/i/projectRamses/LiE_circles.svg");
+        background-size: cover;
+        color: #1ed760;
+    }
+    main #free a{
+        color: #2d46b9;
+        background-color: #1ed760;
+    }
+    main #free a:hover,
+    main #free a:active,
+    main #free a:focus{
+        text-decoration: none;
+    }
+/* ................................................. */
+
+/* FOOTER */ 
+    footer{
+        background-color: black;
+        color: white;
+        padding-bottom: 50px;
+    }
+    /* Footer top */
+    footer .foot_top ul li{
+        line-height: 40px;
+    }
+    footer .foot_top ul li a i{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    /* Footer Bottom */
+    footer .foot_bottom{
+        margin-top: 40px;
+    }
+    footer .foot_bottom ul li{
+        display: inline;
+        padding: 10px;
+    }
+    footer .foot_bottom ul li a{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    footer .foot_bottom a img{
+        width: 30px;
+    }
+/* ................................................. */
+
+
+
+
+/* Media Query */
+@media all and (max-width: 580px){
+    body { text-align: center; }
+
+    header nav,
+    main img,
+    footer .foot_top ul li a i{
+        display: none;
+    }
+    footer img{
+        width: 100px;
+        margin-bottom: 50px;
+    }
+}
+@media all and (max-width: 768px){
+    main img{
+        display: none;
+    }
+}

@@ -227,7 +227,6 @@
     }
     main #principal-content .covers .covers-list .cover-item .cover-container .cover-layover i{
             display: none;
-            transition: width 2s, height 2s, transform 2s;
     }
     main #principal-content .covers .covers-list .cover-item:hover .cover-container .cover-layover {
             background-color: rgba(0, 0, 0, 0.5);
