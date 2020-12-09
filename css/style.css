@@ -488,38 +488,42 @@
 
 
 /* Principal Content */
-    @media screen and (max-width: 600px) {
-        main #principal-content {
-            width: calc(100% - 50px);
-        }
-        main #principal-content .call-to-action{
-            width: calc(100% - 50px);
+        @media screen and (max-width: 600px) {
+                main #principal-content {
+                width: calc(100% - 50px);
+                }
+                main #principal-content .call-to-action{
+                width: calc(100% - 50px);
 
+                }
+                
         }
-        
-    }
     /* Hidden Upgrade Button */
-    @media screen and (max-height: 180px) {
-        main #principal-content .call-to-action {
-          display: none;
+        @media screen and (max-height: 180px) {
+                main #principal-content .call-to-action {
+                display: none;
+                }
         }
-      }
 
  /* Covers Section */
-    @media screen and (max-width: 1100px) {
-        main #princiapl-content .covers .covers-list {
-            flex-wrap: wrap;
-        }
-        main #principal-content .covers .covers-list .cover-item {
-            /* width: calc(100% / 4 - 10px); */
-            margin-right: 10px;
-        }           
+        @media screen and (max-width: 1100px) {
+                main #princiapl-content .covers .covers-list {
+                flex-wrap: wrap;
+                }
+                main #principal-content .covers .covers-list .cover-item {
+                /* width: calc(100% / 4 - 10px); */
+                margin-right: 10px;
+                }           
 }
 
  /* FOOTER */
-    @media screen and (max-width: 50px) {
-        footer { display: none; }
-}
+        @media screen and (max-width: 50px) {
+                footer { display: none; }
+        }
+
+
+
+
 
 
 /* ANIMATION KEYFRAME */

@@ -1,25 +1,3 @@
-/* Debug */
-.debug .row [class*="col-"] {
-    background-color: #0c90e8;
-    border: 1px solid black;
-  }
-  .debug .row {
-    height: 80px;
-    /* line-height: 150px; */
-  }
-  .debug .row [class*="col-"] {
-    height: 100%;
-    /* text-align:center; */
-  }
-  .debug .row .row [class*="col-"] {
-    background-color: coral;
-    border: 2px solid white;
-  }
-  .debug .row .row {
-    padding: 5px;
-  }
-/* ................................................. */
-
   /* MultiUse Class */
     a,
     li a { 
@@ -71,6 +49,17 @@
         font-size: 15px;    
         font-weight: 800;
     }
+    main #offer a:hover,
+    main #offer a:active,
+    main #offer a:focus,
+    main #your2020 a:hover,
+    main #your2020 a:active,
+    main #your2020 a:focus,
+    main #free a:hover,
+    main #free a:active,
+    main #free a:focus{
+        text-decoration: none;
+    }
 /* ................................................. */
 
 /* HEADER */
@@ -108,7 +97,6 @@
     main #offer a:focus{
         color: black;
         background-color: white;
-        text-decoration: none;
     }
     /* .................... */    
 
@@ -125,11 +113,6 @@
         color: #cb1582;
         background-color: white;
     }
-    main #your2020 a:hover,
-    main #your2020 a:active,
-    main #your2020 a:focus{
-        text-decoration: none;
-    }
     /* .................... */
 
    /* Spotify Free section */
@@ -142,11 +125,6 @@
     main #free a{
         color: #2d46b9;
         background-color: #1ed760;
-    }
-    main #free a:hover,
-    main #free a:active,
-    main #free a:focus{
-        text-decoration: none;
     }
 /* ................................................. */
 
@@ -181,25 +159,22 @@
     }
 /* ................................................. */
 
-
-
-
 /* Media Query */
-@media all and (max-width: 580px){
+@media all and (max-width: 1200px){
     body { text-align: center; }
 
     header nav,
-    main img,
-    footer .foot_top ul li a i{
-        display: none;
-    }
-    footer img{
-        width: 100px;
-        margin-bottom: 50px;
-    }
-}
-@media all and (max-width: 768px){
     main img{
         display: none;
     }
 }
+@media all and (max-width: 768px){
+    footer img{
+        width: 100px;
+        margin-bottom: 50px;
+    }
+    footer .foot_top ul li a i{
+        margin: 20px 0;
+    }
+
+/* ................................................. */

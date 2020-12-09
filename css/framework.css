@@ -59,6 +59,12 @@ a.btn:focus {
     border: 1px solid rgb(30,215,96);
     font-size: 18px;
 }
+footer i:hover,
+footer i:active,
+footer i:focus{
+    cursor: pointer;
+    color: rgb(30,215,96);
+}
 
 /* Reciclable Rules */
 .clearfix::after {
