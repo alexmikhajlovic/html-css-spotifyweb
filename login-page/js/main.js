@@ -1,1 +1,1 @@
-alert("Hey, se non hai Premium non sfutti a pieno le potanzialià di Spotify!")
+alert("Hey, se non hai Premium non sfrutti a pieno le potanzialià di Spotify!")
